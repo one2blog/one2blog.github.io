@@ -50,15 +50,13 @@
 <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
 		  <li class="nav-title">Coding Test</li>
-	  {% for category in site.categories %}
-	  {% if category | first == 1day %}
+	  {% for codingTest in site.codingTest %}
 	  <li>
-		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-			  <span class="name">{{ category | first }}</span>
-			  <span class="badge">{{ category | last | size }}</span>
+		  <a class="nav-item" href="{{ root_url }}/{{ site.codingTest_dir }}#{{ codingTest | first }}">
+			  <span class="name">{{ codingTest | first }}</span>
+			  <span class="badge">{{ codingTest | last | size }}</span>
 		  </a>
 	   </li>
-	   {% endif %}
 	  {% endfor %}
 	</nav>
   </ul>
