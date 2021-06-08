@@ -52,7 +52,7 @@
 		  <li class="nav-title">Coding Test</li>
 	  {% for codingTest in site.categories[page.codingTest] %}
 	  <li>
-		  <a class="nav-item" href="{{ root_url }}/{{ site.codingTest_dir }}#{{ codingTest | first }}">
+		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
 			  <span class="name">{{ codingTest | first }}</span>
 			  <span class="badge">{{ codingTest | last | size }}</span>
 		  </a>
