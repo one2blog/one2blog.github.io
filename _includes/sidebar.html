@@ -50,8 +50,7 @@
 <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
 		  <li class="nav-title">Coding Test</li>
-		  <span>{{ site.codingTests }}</span>
-	  {% for codingTest in site.codingTests %}
+	  {% for codingTest in site.codingTest %}
 	  <li>
 		  <a class="nav-item" href="{{ root_url }}/{{ site.codingTest_dir }}#{{ codingTest | first }}">
 			  <span class="name">{{ codingTest | first }}</span>
