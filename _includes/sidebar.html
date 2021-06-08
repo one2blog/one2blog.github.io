@@ -49,12 +49,14 @@
 
 <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
-		  <li class="nav-title">Coding Test</li>
-	  {% for codingTest in site.categories[page.1day] %}
+		  <li class="nav-title">coding Test</li>
+		  <span>{{ site.categories[page.codingTest] }}</span>
+		  <span>{{ site.categories[page.1day] }}</span>
+	  {% for category in site.categories[page.codingTest] %}
 	  <li>
 		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-			  <span class="name">{{ codingTest | first }}</span>
-			  <span class="badge">{{ codingTest | last | size }}</span>
+			  <span class="name">{{ category | first }}</span>
+			  <span class="badge">{{ category | last | size }}</span>
 		  </a>
 	   </li>
 	  {% endfor %}
