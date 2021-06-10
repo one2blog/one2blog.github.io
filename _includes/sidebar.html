@@ -51,7 +51,7 @@
   	<ul class="nav">
 			<li class="nav-title">Categories</li>
 		{% for category in site.categories %}
-			<span> {{ category }} </span>
+			<span> {{ category | first }} </span>
 			{% if node.layout == "page" %}
 				<li>
 				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
