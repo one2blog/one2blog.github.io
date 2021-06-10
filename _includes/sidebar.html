@@ -50,14 +50,13 @@
 <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
 		  <li class="nav-title">coding Test</li>
-	  {% for category in site.categories[page.category] %}
+	{{% assign codingTest = site.categories[3]}}
 	  <li>
-		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-			  <span class="name">{{ category | first }}</span>
-			  <span class="badge">{{ category | last | size }}</span>
+		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ codingTest | first }}">
+			  <span class="name">{{ codingTest | first }}</span>
+			  <span class="badge">{{ codingTest | last | size }}</span>
 		  </a>
 	   </li>
-	  {% endfor %}
 	</nav>
   </ul>
 </div>
