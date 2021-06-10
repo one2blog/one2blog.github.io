@@ -51,13 +51,13 @@
 	<ul class="nav">
       <li class="nav-title">codingTest</li>
 	  {% assign pages_list = site.pages %}
-		{{ pages_list }}
 	  {% for node in pages_list %}
 	    {% if node.title != null %}
 	      {% if node.layout == "page" %}
 	        <li>
 	        	<a class="nav-item" href="{{ node.url }}">
-	            	{{ node.title }}
+	            	<span class="name">{{ node | first }}</span>
+			<span class="badge">{{ node | last | size }}</span>
 	            </a>
 	        </li>
 	      {% endif %}
