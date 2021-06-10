@@ -50,9 +50,10 @@
 <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
 		  <li class="nav-title">coding Test</li>
-	{{% assign codingTest = site.categories[3]}}
+	{{% assign codingTest = site.categories[2]}}
 	  <li>
 		{{ codingTest }}
+		{{ site.categories[0] }}
 		</li>
 	  <li>
 		  <a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ codingTest | first }}">
