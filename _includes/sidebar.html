@@ -52,7 +52,7 @@
 			<li class="nav-title">Categories</li>
 		{% for category in site.categories %}
 			{% assign list = category | first %}
-			{% if list == "codingTest" %}
+			{% if list == "백준" or list == "알고리즘 공부" %}
 				<li>
 				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
 						<span class="name">{{ category | first }}</span>
