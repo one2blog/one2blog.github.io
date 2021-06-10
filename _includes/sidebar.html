@@ -51,9 +51,7 @@
   	<ul class="nav">
 			<li class="nav-title">Categories</li>
 	    {% for category in site.categories %}
-		{{% assign codingTest = category | first %}}
-		{{ codingTest }}
-		{{% if == codingTest}}
+		{{% if category | first == "codingTest" %}}
 	    	<li>
 	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
 				<span class="name">{{ category | first }}</span>
