@@ -51,15 +51,14 @@
   	<ul class="nav">
 			<li class="nav-title">Categories</li>
 	    {% for category in site.categories %}
-		<span> root : {{ root_url }} </span>
-		<span> root : {{ site.category_dir }} </span>
-		<span> root : {{ category | first }} </span>
+		{{% if category | first == codingTest}}
 	    <li>
 	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
 				<span class="name">{{ category | first }}</span>
 				<span class="badge">{{ category | last | size }}</span>
 	    	</a>
  		</li>
+		{{% endif %}}
 	    {% endfor %}
 	  </nav>
 	</ul>
