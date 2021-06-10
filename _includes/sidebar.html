@@ -48,21 +48,20 @@
 </div>
 
 <div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title">codingTest</li>
-	  {% assign pages_list = site.pages %}
-	  {% for node in pages_list %}
-	    {% if node.title != null %}
-	      {% if node.layout == "page" %}
-	        <li>
-	        	<a class="nav-item" href="{{ node.url }}">
-	            	<span class="name">{{ node | first }}</span>
-			<span class="badge">{{ node | last | size }}</span>
-	            </a>
-	        </li>
-	      {% endif %}
-	    {% endif %}
-	  {% endfor %}
+  	<ul class="nav">
+			<li class="nav-title">Categories</li>
+	    {% for category in site.categories %}
+		{{ root_url }}
+		{{ site.category_dir }}
+		{{ category | first }}
+	    <li>
+	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
+				<span class="name">{{ category | first }}</span>
+				<span class="badge">{{ category | last | size }}</span>
+	    	</a>
+ 		</li>
+	    {% endfor %}
+	  </nav>
 	</ul>
 </div>
 
