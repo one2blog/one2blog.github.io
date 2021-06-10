@@ -53,7 +53,7 @@
 		{% for category in site.categories %}
 			{% assign foo = category | first %}
 			<span> {{ foo }} </span>
-			{% if category | first == "1day" %}
+			{% if foo == "1day" %}
 				<li>
 				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
 						<span class="name">{{ category | first }}</span>
