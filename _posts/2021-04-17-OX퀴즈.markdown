@@ -1,11 +1,11 @@
 ---
 layout: post
-title: OX퀴즈
+title: 별찍기
 date: 2021-04-17 13:32:23 +0900
 category: 'baekjoon'
-tags: [1day]
+tags : [1day]
 ---
-# OX퀴즈
+# OX퀴즈[[2525]][별찍기]
 >문제
 
 "OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다. O는 문제를 맞은 것이고, X는 문제를 틀린 것이다. 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다. 예를 들어, 10번 문제의 점수는 3이 된다.
@@ -22,7 +22,8 @@ OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작�
 각 테스트 케이스마다 점수를 출력한다.
 
 >예제입력
-```ruby
+
+```cpp
 5
 OOXXOXXOOO
 OOXXOOXXOO
@@ -31,7 +32,8 @@ OOOOOOOOOO
 OOOOXOOOOXOOOOX
 ```
 >예제출력
-```ruby
+
+```cpp
 10
 9
 7
@@ -41,7 +43,7 @@ OOOOXOOOOXOOOOX
 
 >내 풀이
 
-{% highlight ruby %}
+```javascript
 // const fs = require('fs');
 // const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXOOOOXOOOOX'];
@@ -61,4 +63,6 @@ const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXO
     console.log(result);
     result = 0;
   }
-{% endhighlight %}
+```
+
+[별찍기]: https://jekyllrb.com/docs/home
