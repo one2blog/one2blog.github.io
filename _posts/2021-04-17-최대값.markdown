@@ -24,25 +24,26 @@ tags : [1day]
 
 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
->예제입력
-
-```cpp
-3
-29
-38
-12
-57
-74
-40
-85
-61
-```
->예제출력
-
-```cpp
-85
-8
-```
+<div class="mt-20">
+	<div class="row">
+		<div class="col-md-6 pl-0">
+			<section id="sampleinput1">
+                <div class="headline">
+                <p>예제 입력 1</p>
+                </div>
+			    <pre class="sampledata" id="sample-input-1">5<br>3<br>29<br>38<br>12<br>57<br>74<br>40<br>85<br>61</pre>
+		    </section>
+	    </div>
+	    <div class="col-md-6 pl-0">
+		    <section id="sampleoutput1">
+                <div class="headline">
+                <p>예제 출력 1</p>
+                </div>
+                <pre class="sampledata" id="sample-output-1">85<br>8</pre>
+            </section>
+	    </div>
+	</div>
+</div>
 
 >내 풀이
 

@@ -18,24 +18,26 @@ tags : [1day]
 
 첫째 줄부터 2×N-1번째 줄까지 차례대로 별을 출력한다.
 
->예제입력
-
-```cpp
-5
-```
->예제출력
-
-```cpp
-*********
- *******
-  *****
-   ***
-    *
-   ***
-  *****
- *******
-*********
-```
+<div class="mt-20">
+	<div class="row">
+		<div class="col-md-6 pl-0">
+			<section id="sampleinput1">
+                <div class="headline">
+                <p>예제 입력 1</p>
+                </div>
+			    <pre class="sampledata" id="sample-input-1">5</pre>
+		    </section>
+	    </div>
+	    <div class="col-md-6 pl-0">
+		    <section id="sampleoutput1">
+                <div class="headline">
+                <p>예제 출력 1</p>
+                </div>
+                <pre class="sampledata" id="sample-output-1">*********<br> *******<br>  *****<br>   ***<br>    *<br>   ***<br>  *****<br> *******<br>*********</pre>
+            </section>
+	    </div>
+	</div>
+</div>
 
 >내 풀이
 
