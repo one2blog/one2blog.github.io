@@ -30,7 +30,7 @@
 		if (window.location.hash) {
 			let hash = window.location.hash.substring(1);
 			if(check_kor.test(hash)){
-				$('#category-name').text(hash);
+				if(hash == 'Baekjoon') $('#category-name').text('백준');
 			}else {
 				$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
 			}
