@@ -30,7 +30,7 @@ svg:
   optimize: true
 # Build settings
 # theme: minima
-highlighter-theme: monokai.sublime
+highlighter-theme: solarized_light
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed

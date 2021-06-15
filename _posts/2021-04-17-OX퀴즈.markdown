@@ -65,4 +65,4 @@ const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXO
   }
 ```
 
-[OX 퀴즈] : https://www.acmicpc.net/problem/8958
+[OX 퀴즈]:https://www.acmicpc.net/problem/8958

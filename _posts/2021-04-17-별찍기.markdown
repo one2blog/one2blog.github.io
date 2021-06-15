@@ -76,4 +76,4 @@ for(let i=1; i<=starLine; i++){
 console.log(result);
 ```
 
-[별찍기] : https://www.acmicpc.net/problem/2446
+[별찍기]:https://www.acmicpc.net/problem/2446

@@ -65,4 +65,4 @@ let maxIdx = 0;
   console.log(maxIdx + 1);
 ```
 
-[최댓값] : https://www.acmicpc.net/problem/2562
+[최댓값]:https://www.acmicpc.net/problem/2562
