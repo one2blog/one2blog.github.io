@@ -21,7 +21,7 @@
 title: one2
 email: tudshow2@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  '반갑습니다.'
+  반갑습니다.:)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://one2blog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: one2blog
