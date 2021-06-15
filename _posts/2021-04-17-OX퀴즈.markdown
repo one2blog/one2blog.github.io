@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 별찍기
+title: OX퀴즈
 date: 2021-04-17 13:32:23 +0900
 category: 'baekjoon'
 tags : [1day]
