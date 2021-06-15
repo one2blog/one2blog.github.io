@@ -32,7 +32,7 @@ pre {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.table{
+.container .content .table{
     margin-bottom: 1rem;
     width: 100%;
     border: 0.5px solid #ddd;
