@@ -22,7 +22,7 @@ OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작�
 각 테스트 케이스마다 점수를 출력한다.
 
 >예제입력
-```ruby
+```cpp
 5
 OOXXOXXOOO
 OOXXOOXXOO
@@ -31,7 +31,7 @@ OOOOOOOOOO
 OOOOXOOOOXOOOOX
 ```
 >예제출력
-```ruby
+```cpp
 10
 9
 7
@@ -41,7 +41,7 @@ OOOOXOOOOXOOOOX
 
 >내 풀이
 
-{% highlight ruby %}
+{% highlight javascript %}
 // const fs = require('fs');
 // const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXOOOOXOOOOX'];
