@@ -24,10 +24,21 @@
 
 <script src="/public/js/jquery-3.4.1.slim.min.js"></script>
 <script>
+	function isEnglishOrKorean(input_s){
+		
+	}
+
+
 	function removeCategory() {
+		var check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; // 한글체크
+
 		if (window.location.hash) {
 			let hash = window.location.hash.substring(1);
-			$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
+			if(check_kor.test(hash)){
+				$('#category-name').text(hash);
+			}else {
+				$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
+			}
 			let category_class = '.post-category-' + hash;
 			let items = $('.post-list-item').each((i, e) => {
 				if (!$(e).hasClass('post-category-' + hash)) {
@@ -44,5 +55,4 @@
 	$(document).ready(() => {
 		removeCategory();	
 	})
-	
 </script>
