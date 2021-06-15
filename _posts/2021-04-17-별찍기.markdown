@@ -62,3 +62,9 @@ const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXO
     result = 0;
   }
 {% endhighlight %}
+
+
+
+백준 알고리즘 [별찍기][jekyll-docs]
+
+[별찍기]: https://jekyllrb.com/docs/home
