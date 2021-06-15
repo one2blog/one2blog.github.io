@@ -65,6 +65,6 @@ const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXO
 
 
 
-백준 알고리즘 [별찍기][jekyll-docs]
+백준 사이트 : [별찍기(2525)][별찍기]
 
 [별찍기]: https://jekyllrb.com/docs/home
