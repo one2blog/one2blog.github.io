@@ -3,62 +3,66 @@ layout: post
 title: 최댓값
 date: 2021-04-17 13:32:23 +0900
 category: 'baekjoon'
-tags: [1day]
+tags : [1day]
 ---
-# OX퀴즈
+# 최댓값[[2562]][최댓값]
 >문제
 
-"OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다. O는 문제를 맞은 것이고, X는 문제를 틀린 것이다. 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다. 예를 들어, 10번 문제의 점수는 3이 된다.
+9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
 
-"OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
+예를 들어, 서로 다른 9개의 자연수
 
-OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
+3, 29, 38, 12, 57, 74, 40, 85, 61
+
+이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
+
 >입력
 
-첫째 줄에 테스트 케이스의 개수가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있고, 길이가 0보다 크고 80보다 작은 문자열이 주어진다. 문자열은 O와 X만으로 이루어져 있다.
+첫째 줄부터 아홉 번째 줄까지 한 줄에 하나의 자연수가 주어진다. 주어지는 자연수는 100 보다 작다.
 
 >출력
 
-각 테스트 케이스마다 점수를 출력한다.
+첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
 >예제입력
+
 ```cpp
-5
-OOXXOXXOOO
-OOXXOOXXOO
-OXOXOXOXOXOXOX
-OOOOOOOOOO
-OOOOXOOOOXOOOOX
+3
+29
+38
+12
+57
+74
+40
+85
+61
 ```
 >예제출력
+
 ```cpp
-10
-9
-7
-55
-30
+85
+8
 ```
 
 >내 풀이
 
-{% highlight javascript %}
+```javascript
 // const fs = require('fs');
 // const input = fs.readFileSync('/dev/stdin').toString().split('\n');
-const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXOOOOXOOOOX'];
+const input = ['3', '29', '38', '12', '57', '74', '40', '85', '61'];
+const inputToInt = input.map(num => (num = parseInt(num)));
 
-  let result = 0;
-  let ox = 0;
-
-  for(let i=1; i <= input[0]; i++){
-    for(let j=0; j <= input[i].length; j++){
-      if(input[i][j] == "O"){
-          ox++;
-          result += ox;
-      }else {
-          ox = 0;
+let max = 0;
+let maxIdx = 0;
+  
+  for(let i=0; i<=inputToInt.length; i++){
+      if(inputToInt[i] > max){
+          max = inputToInt[i];
+          maxIdx = i;
       }
-    }
-    console.log(result);
-    result = 0;
   }
-{% endhighlight %}
+  console.log(max);
+  console.log(maxIdx + 1);
+```
+
+[최댓값] : https://www.acmicpc.net/problem/2562

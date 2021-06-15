@@ -59,6 +59,13 @@
 						<span class="badge">{{ category | last | size }}</span>
 				</a>
 				</li>
+			{% if list == "coding-test-study" %}
+				<li>
+				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
+						<span class="name">코딩 테스트 공부</span>
+						<span class="badge">{{ category | last | size }}</span>
+				</a>
+				</li>
 			{% endif %}
 		{% endfor %}
 	  </nav>

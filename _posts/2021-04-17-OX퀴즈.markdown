@@ -5,7 +5,7 @@ date: 2021-04-17 13:32:23 +0900
 category: 'baekjoon'
 tags : [1day]
 ---
-# OX퀴즈[[2525]][별찍기]
+# OX퀴즈[[8958]][OX 퀴즈]
 >문제
 
 "OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다. O는 문제를 맞은 것이고, X는 문제를 틀린 것이다. 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다. 예를 들어, 10번 문제의 점수는 3이 된다.
@@ -65,4 +65,4 @@ const input = [5,'OOXXOXXOOO','OOXXOOXXOO','OXOXOXOXOXOXOX','OOOOOOOOOO','OOOOXO
   }
 ```
 
-[별찍기]: https://jekyllrb.com/docs/home
+[OX 퀴즈] : https://www.acmicpc.net/problem/8958

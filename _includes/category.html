@@ -30,6 +30,8 @@
 			let hash = window.location.hash.substring(1);
 			if(hash == 'baekjoon'){
 				$('#category-name').text('백준');
+			}else if(hash == 'coding-test-study'){
+				$('#category-name').text('IT 취업을 위한 알고리즘 문제');
 			}else {
 				$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
 			}
