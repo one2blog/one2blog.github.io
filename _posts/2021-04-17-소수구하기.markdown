@@ -2,7 +2,7 @@
 layout: post
 title: 소수구하기
 date: 2021-04-17 13:32:23 +0900
-categore: 'Baekjoon'
+category: 'Baekjoon'
 tags: [1day]
 ---
 # OX퀴즈
